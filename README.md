@@ -1,6 +1,7 @@
 # Job-Tools
 Job Tools for improve estimatives of the stock market.
-print("Ex: abev3.sa")
+
+print("Ex: abev3.sa")                           # the code to find enterprise on stock market through yahoofinance
 paper = input("Type stock code, please: ")
 print("You choose: "+paper)
 
