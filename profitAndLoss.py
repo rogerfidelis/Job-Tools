@@ -1,10 +1,10 @@
 from yahooquery import Ticker
 
-# Informações financeiras
-petr = Ticker("PETR4.SA")     # Coleta dados
-petr = petr.income_statement()# Chama função de Demonstração de resultados
-petr = petr.transpose()        # Transpoe a matriz
-petr.columns = petr.iloc[0,:] # Renomeia colunas
-petr = petr.iloc[2:,:-1]      # Seleciona dados
-petr = petr.iloc[:, ::-1]     # Inverte colunas
+# financial report
+petr = Ticker("PETR4.SA")        # Pick up data
+petr = petr.income_statement()   # Call income statement function
+petr = petr.transpose()          # Transpor matrix
+petr.columns = petr.iloc[0,:]    # Rename columns
+petr = petr.iloc[2:,:-1]         # Select data
+petr = petr.iloc[:, ::-1]        # Invert columns
 print(petr)
